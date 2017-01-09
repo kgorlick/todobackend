@@ -33,7 +33,7 @@ services:
     command: ["pip", "wheel", "--no-index", "-f /build", "."]
 
   agent:
-    image: jmenga/ansible
+    image: a3/ansible
     links:
       - db
     environment:
